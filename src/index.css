@@ -60,6 +60,7 @@ a {
   color: var(--mainBlack);
 }
 img {
+  cursor: pointer;
   width: 100%;
   display: block;
 }
@@ -329,6 +330,7 @@ Cocktail
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--primaryColor);
+  
 }
 .drink-info {
   padding-top: 2rem;

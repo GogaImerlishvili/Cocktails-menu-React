@@ -1,25 +1,12 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import logo from '../logo.svg'
-const Home = () => {
-  return(
-      <nav className='navbar'>
-          <div className='nav-center'>
-              <Link to="/">
-                  <img src = {logo} alt ='cocktail' className="logo"></img>
-              </Link>
-              <ul className='nav-links'>
-                  <li>
-                      <Link to='/'>Home</Link>
-                  </li>
-                  <li>
-                      <Link to='/about'>About</Link>
-                  </li>
-              </ul>
-          </div>
-         
-      </nav>
+import React from 'react'
+import CocktailList from '../components/CocktailList'
+import SearchForm from '../components/SearchForm'
+export default function Home() {
+  return (
+    <main>
+      <SearchForm />
+      <CocktailList />
+    </main>
   )
-};
+}
 
-export default Home;
